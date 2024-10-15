@@ -106,6 +106,10 @@ export default function Home() {
        Properties
         </Link>
        
+        <Link href="/login">
+      Login
+        </Link>
+
       </footer>
     </div>
   );
