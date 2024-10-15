@@ -98,10 +98,12 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-        <Link href="/helloworld">
-       Hello World
+        <Link href="/about">
+       About
         </Link>
       </footer>
     </div>
   );
 }
+
+
