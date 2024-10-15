@@ -34,28 +34,34 @@ export default function PropertiesList() {
     fetchProperties();
   }, []);
 
+
   return (
     <div>
       {/* Navigation */}
       <Navbar /> {/* Import and render the Navbar component */}
       <div className="content">
-      {properties.length === 0 ? (
-        <p>No properties found.</p>
-      ) : (
-        properties.map((property) => (
-          <div key={property.id}>
-            <h2>{property.name}</h2>
-            <p>{property.created_at}</p>
-          </div>
-        ))
-      )}
+        {error ? (
+          <p>Error: {error.message}</p>
+        ) : (
+          properties.length === 0 ? (
+            <p>No properties found.</p>
+          ) : (
+            properties.map((property) => (
+              <div key={property.id}>
+                <h2>{property.name}</h2>
+                <p>{property.created_at}</p>
+              </div>
+            ))
+          )
+        )}
       </div>
       {/* Footer */}
       <Footer /> {/* Import and render the Footer component */}
     </div>
   );
-}
-
+    
+      
+      
 //testing end
 
 
