@@ -1,3 +1,17 @@
+import Head from 'next/head';
+
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>Hello, World!</title>
+      </Head>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
+ 
+ 
  /** Supabase Client Setup */
 import { createClient } from '@supabase/supabase-js';
 
