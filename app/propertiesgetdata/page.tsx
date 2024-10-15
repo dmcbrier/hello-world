@@ -56,12 +56,13 @@ export default function PropertiesList() {
         )}
       </div>
       {/* Footer */}
-      <Footer /> {/* Import and render the Footer component */}
+       {/* Footer */}
+       <Footer /> {/* Import and render the Footer component */}
     </div>
   );
-    
-      
-      
+}
+
+
 //testing end
 
 
