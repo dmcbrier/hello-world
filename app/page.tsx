@@ -99,7 +99,7 @@ export default function Home() {
           Go to nextjs.org →
         </a>
         <Link href="/helloworld">
-        Properties Get Data
+       Hello World
         </Link>
       </footer>
     </div>
