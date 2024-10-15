@@ -1,5 +1,14 @@
 "use client";  // Add this line at the top
 
+// propertiesgetdata.tsx
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
+
+// export const metadata = {
+//   title: 'Properties Get Data',
+//   description: 'This is a data call page .',
+// };
+
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient'; // Adjust the path if necessary
 
@@ -24,9 +33,12 @@ export default function PropertiesList() {
   
     fetchProperties();
   }, []);
-  
+
   return (
     <div>
+      {/* Navigation */}
+      <Navbar /> {/* Import and render the Navbar component */}
+      <div className="content">
       {properties.length === 0 ? (
         <p>No properties found.</p>
       ) : (
@@ -37,6 +49,9 @@ export default function PropertiesList() {
           </div>
         ))
       )}
+      </div>
+      {/* Footer */}
+      <Footer /> {/* Import and render the Footer component */}
     </div>
   );
 }

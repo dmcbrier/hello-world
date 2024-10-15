@@ -1,35 +1,23 @@
 // about.tsx
-
-// navigation start
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 
-export default function YourPage() {
+export const metadata = {
+  title: 'About Us',
+  description: 'This is a secondary page about our company.',
+};
+
+export default function AboutPage() {
   return (
     <div>
-      <Navbar />
-      {      
-      /* individual page content start*/
-      export const metadata = {
-        title: 'About Us',  // Title for the page
-        description: 'This is a secondary page about our company.', // Optional: add a description
-      };
-      
-      export default function About() {
-        return (
-          <div>
-            <h1>Hello, World!</h1>
-            <p>This is a secondary page about our company.</p>
-          </div>
-        );
-      }      
-      /* individual page content end*/
-      }
+      <Navbar/>
+      <div className="content">
+        {/* individual page content start */}
+        <h1 className="text-3xl font-bold">Hello, World!</h1>
+        <p className="text-lg">This is a secondary page about our company.</p>
+      </div>
+      {/* individual page content end */}
       <Footer />
     </div>
   );
 }
-
-
-
-

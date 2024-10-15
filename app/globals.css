@@ -29,7 +29,7 @@ body {
 /* Navigation CSS*/
 nav {
   background-color: #f0f0f0;
-  padding: 10px;
+  padding: 12px;
 }
 
 nav ul {
@@ -47,6 +47,22 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #eee;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+/* Navigation CSS*/
+
+
+/* Container not used... removed as was causing a css issue */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure full width */
+  /* align-items: left;*/
+  min-height: 100vh; /* Set the minimum height to 100% of the viewport */
 }
 
-/* Navigation CSS*/
+.content {
+  padding: 30px;
+  background-color: #ffffff;
+  /* border: 1px solid #ccc; */
+}
