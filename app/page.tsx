@@ -101,6 +101,11 @@ export default function Home() {
         <Link href="/about">
        About
         </Link>
+
+        <Link href="/propertiesgetdata">
+       Properties
+        </Link>
+       
       </footer>
     </div>
   );
